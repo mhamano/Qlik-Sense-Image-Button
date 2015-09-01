@@ -1,0 +1,35 @@
+/* CSS */
+.qv-object-Qlik-Sense-Image-Button .qv-object-content {
+	overflow: auto;
+}
+.qv-object-Qlik-Sense-Image-Button img {
+	margin: 5px;
+}
+
+/* colors when NOT in selection mode*/
+.qv-object-Qlik-Sense-Image-Button img.stateS, .qv-object-Qlik-Sense-Image-Button img.stateL {
+    background-color : #62AC1E; 
+  	border: 2px #4C8C2B solid;
+}
+
+.qv-object-Qlik-Sense-Image-Button img.stateX, .qv-object-Qlik-Sense-Image-Button img.stateXL, .qv-object-Qlik-Sense-Image-Button img.stateXS {
+	opacity : 0.5;
+    background-color : #c5c7c8; 
+}
+
+/* colors when in selection mode*/
+.qv-object-Qlik-Sense-Image-Button img.stateA, .qv-object-Qlik-Sense-Image-Button.qv-selections-active img {
+	opacity : 0.5;
+    background-color : #c5c7c8; 
+}
+.qv-object-Qlik-Sense-Image-Button img.selected {
+    background-color : #62AC1E; 
+  	border: 2px #4C8C2B solid;
+}
+
+/* frequency */
+.qv-object-Qlik-Sense-Image-Button img.data span {
+	padding-left: 10px;
+	font-style: italic;
+	float:right;
+}

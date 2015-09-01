@@ -1,0 +1,9 @@
+{
+	"name": "Qlik-Sense-Image-Button",
+	"description": "",
+	"icon" : "list",
+	"type" : "visualization",
+	"version": "1.0",
+	"preview" : "listbox",
+	"author": "Masaki Hamano"
+}
