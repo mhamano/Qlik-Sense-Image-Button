@@ -21,7 +21,7 @@ function ( $, cssContent ) {
 			version: 1.0,
 			qListObjectDef : {
 				qShowAlternatives : true,
-				qFrequencyMode : "V",
+				qFrequencyMode : "N",
 				qInitialDataFetch : [{
 					qWidth : 2,
 					qHeight : 50
