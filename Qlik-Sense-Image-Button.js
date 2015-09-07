@@ -5,6 +5,16 @@ define( [
 function ( $, cssContent ) {
   
     $("<style>").html(cssContent).appendTo("head");
+  
+  	var imagePath = {
+		ref : "imagepath",
+		label : "Image path",
+		type : "string",
+		defaultValue : "/content/default/",
+		show : function(data) {
+			return data.fixed;
+		}
+	}
 
 	return {	  
 	  initialProperties : {
@@ -80,7 +90,8 @@ function ( $, cssContent ) {
 								value : "REPLACE",
 								label : "Replace selection"
 							}]
-						}
+						},
+					  	imagePath : imagePath
 					}
 				},
 				dimension : {
@@ -238,9 +249,8 @@ function ( $, cssContent ) {
 		},
 		paint: function ($element,layout) {
 		  
-		  	var content_path = '/content/default/'
+		  	var content_path = layout.imagepath;
 			
-		  	console.log(layout);
 		  	var self = this, html = "<div>", style;
 			if(layout.fixed) {
 				style = 'style="width:' + layout.width + (layout.percent ? '%' : 'px') + ';"';
